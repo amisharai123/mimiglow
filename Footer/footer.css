@@ -1,0 +1,64 @@
+.site-footer {
+  background-color: #ffb6c1;
+  padding: 40px 20px 20px;
+  color: #333;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-section {
+  width: 300px;
+  padding: 0 10px;
+}
+
+/* Positioning Left, Center, Right manually */
+.footer-section:first-child {
+  text-align: left;
+}
+
+.footer-section:nth-child(2) {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-section:last-child {
+  text-align: right;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #222;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 5px 0;
+}
+
+.payment-icon {
+  width: 100px;
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #999;
+  margin-top: 30px;
+  padding-top: 15px;
+  font-size: 14px;
+}

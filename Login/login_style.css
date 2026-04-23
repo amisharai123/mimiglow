@@ -1,0 +1,163 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #fff5f8;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Split Container */
+.split-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Left Side (Image only, no overlay) */
+.left-side {
+  flex: 1;
+  background-image: url('../web_image/login_image08.jpg'); /* Update the path if needed */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Right Side (Form) */
+.right-side {
+  flex: 1;
+  background-color: #fff5f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Container */
+.login-form {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Form Title */
+.login-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ff6a00;
+  font-weight: bold;
+}
+
+/* Labels */
+.login-form label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  margin: 6px 0 3px;
+  font-weight: bolder;
+  color: black;
+}
+
+/* Input Fields */
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid green;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: #f49ec9;
+  background-color: #fefefe;
+}
+
+/* Forgot Password Link */
+.forgot-password-link {
+  display: block;
+  text-align: center;
+  margin: 10px 0 15px;
+  font-size: 13px;
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Submit Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.login-btn:hover {
+  background-color: #f49ec9;
+  transform: scale(1.05);
+}
+
+/* Paragraph and Links */
+.login-form p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-form a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-form a:hover {
+  text-decoration: underline;
+}
+
+/* Error Message Styling (optional) */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .split-container {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .login-form {
+    padding: 25px;
+    margin: 10px;
+  }
+}
